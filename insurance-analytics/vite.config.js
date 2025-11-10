@@ -1,7 +1,11 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
+// Adjust base to new repository name for GitHub Pages deployment
 export default defineConfig({
-  base: '/Data_Viz_Lab/', // GitHub Pages project path
+  base: '/InsuranceAnalytics/',
+  build: {
+    outDir: '../docs'
+  },
   plugins: [react()],
 })
